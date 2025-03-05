@@ -1,4 +1,4 @@
-//Banking Record System , C++ Project by Abhisht. 
+//Banking Record System , C++ Project by Vinay 
 #include <iostream>
 
 #include <fstream>
@@ -394,5 +394,5 @@ void Account_Modification(unsigned long long n) {
 
 void Credit() {
     system_clear();
-    cout << "\n\nBanking Record System Project by Abhisht Chouhan." << "\nWritten in C++.";
+    cout << "\n\nBanking Record System Project by VInay." << "\nWritten in C++.";
 }
