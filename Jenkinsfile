@@ -17,7 +17,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh 'docker build -t ${IMAGE_NAME} .'
+                    bat 'docker build -t ${IMAGE_NAME} .'
                 }
             }
         }
@@ -25,7 +25,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    sh '''
+                    bat '''
                     docker stop ${CONTAINER_NAME} || true
                     docker rm ${CONTAINER_NAME} || true
                     docker run -d --name ${CONTAINER_NAME} ${IMAGE_NAME}
